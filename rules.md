@@ -85,6 +85,16 @@
 - transform-origin has no effect on this element because it is not transformed
 - transform-style has no effect on this element because it is not transformed
 
+# Scroll-snapping properties
+
+- scroll-snap-coordinate has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-destination has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-points-x has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-points-y has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-type has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-type-x has no effect on this element since it is not a scrollable container (try overflow:scroll)
+- scroll-snap-type-y has no effect on this element since it is not a scrollable container (try overflow:scroll)
+
 # Misc
 
 - list-style-image has no effect on this element since it is list-style-type:none
