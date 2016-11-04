@@ -76,6 +76,15 @@
 - transition-duration has no effect on this element since it does no define any transition
 - transition-timing-function has no effect on this element since it does no define any transition
 
+# Transform properties
+
+- perspective has no effect on this element because it is not transformed
+- perspective-origin has no effect on this element because it is not transformed
+- backface-visibility has no effect on this element because it is not transformed
+- transform-box has no effect on this element because it is not transformed
+- transform-origin has no effect on this element because it is not transformed
+- transform-style has no effect on this element because it is not transformed
+
 # Misc
 
 - list-style-image has no effect on this element since it is list-style-type:none
