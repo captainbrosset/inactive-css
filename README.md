@@ -1,6 +1,6 @@
 # A list of rules for when CSS properties have no effect.
 
-In certain situations, CSS properties do not have any effect. A common example is trying set `width` on an inline element like a `<span>`.
+In certain situations, CSS properties do not have any effect. A common example is trying to set `width` on an inline element like a `<span>`.
 
 There are so many properties in CSS that it's impossible for anyone to remember which ones do and don't apply in some situations. Some are straight-forward like `flex-wrap` only applies to an element that has `display:flex`. Others are less trivial like setting something else than a color on a `:visited` pseudo-class.
 
