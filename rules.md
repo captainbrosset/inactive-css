@@ -114,3 +114,4 @@
 # Misc
 
 - list-style-image has no effect on this element since it is list-style-type:none
+- resize has no effect on this element because it is overflow:visible
