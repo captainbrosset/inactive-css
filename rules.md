@@ -34,6 +34,22 @@
 - height has no effect on this element since it's an inline element
 - width has no effect on this element since it's an inline element
 
+# Margin and padding properties on tables
+
+- margin has no effect on this element since it is has a table-cell display type
+- margin has no effect on this element since it is has a table-column display type
+- margin has no effect on this element since it is has a table-column-group display type
+- margin has no effect on this element since it is has a table-footer-group display type
+- margin has no effect on this element since it is has a table-header-group display type
+- margin has no effect on this element since it is has a table-row display type
+- margin has no effect on this element since it is has a table-row-group display type
+- padding has no effect on this element since it has a table-row-group display type
+- padding has no effect on this element since it has a table-header-group display type
+- padding has no effect on this element since it has a table-footer-group display type
+- padding has no effect on this element since it has a table-row display type
+- padding has no effect on this element since it has a table-column-group display type
+- padding has no effect on this element since it has a table-column display type
+
 # Grid & flex properties
 
 - grid-X has no effect on this element since it doesn't define a grid layout (try adding display:grid)
