@@ -78,6 +78,12 @@
 - flex-shrink has no effect on this element since it is not a flex item (try adding display:flex to its parent)
 - flex-grow has no effect on this element since it is not a flex item (try adding display:flex to its parent)
 - order has no effect on this element since it is not a flex item (try adding display:flex to its parent)
+- justify-content has no effect on this element since it is not a flex or grid container (try adding display:flex or display:grid)
+- align-items has no effect on this element since it is not a flex or grid container (try adding display:flex or display:grid)
+- align-content has no effect on this element since it is not a flex or grid container (try adding display:flex or display:grid)
+- align-self has no effect on this element since it is not a flex or grid item (try adding display:flex or display:grid to its parent)
+- justify-items has no effect on this element since it is not a grid item (try adding display:grid to its parent)
+- justify-self has no effect on this element since it is not a grid item (try adding display:grid to its parent)
 
 # Table properties
 
