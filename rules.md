@@ -137,3 +137,5 @@
 - list-style-image has no effect on this element since it is list-style-type:none
 - resize has no effect on this element because it is overflow:visible
 - text-overflow has no effect on this element because it is not a block container element and/or doesn't clip content (try overflow:hidden)
+- float has no effect on this element since it is a flex item
+- float has no effect on this element since it is a grid item
