@@ -84,6 +84,7 @@
 - align-self has no effect on this element since it is not a flex or grid item (try adding display:flex or display:grid to its parent)
 - justify-items has no effect on this element since it is not a grid item (try adding display:grid to its parent)
 - justify-self has no effect on this element since it is not a grid item (try adding display:grid to its parent)
+- width/height have no effect on this element since flex-basis is already defined
 
 # Table properties
 
