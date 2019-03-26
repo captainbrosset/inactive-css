@@ -140,5 +140,6 @@
 - text-overflow has no effect on this element because it is not a block container element and/or doesn't clip content (try overflow:hidden)
 - float has no effect on this element since it is a flex item
 - float has no effect on this element since it is a grid item
+- display inline/block/inline-block/table-row/table-row-group/table-column/table-column-group/table-cell/table-caption/table-header-group/table-footer-group has no effect on this element. Because it is floated, its display is computed to block (note: table, flex and grid are valid, also inline-table gets computed to table, inline-flex to flex and inline-grid to grid)
 - clip has no effect on this element since its position is not one of absolute or fixed
 - z-index has no effect on this element since its position is static
