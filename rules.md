@@ -141,3 +141,4 @@
 - float has no effect on this element since it is a flex item
 - float has no effect on this element since it is a grid item
 - clip has no effect on this element since its position is not one of absolute or fixed
+- z-index has no effect on this element since its position is static
