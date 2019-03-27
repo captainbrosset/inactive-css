@@ -100,6 +100,7 @@
 - X has no effect on :visited since it is not in the limited set of properties that can be set on this pseudo-class (try changing the text, background or border color instead)
 - X has no effect on ::before since this pseudo-element does not exist (try adding content:"")
 - X has no effect on ::after since this pseudo-element does not exist (try adding content:"")
+- X has no effect on ::marker since it is not in then limited set of properties that can be set on this pseudo-element (TO BE COMPLETED)
 
 # Animation properties
 
