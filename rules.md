@@ -101,6 +101,7 @@
 - X has no effect on ::before since this pseudo-element does not exist (try adding content:"")
 - X has no effect on ::after since this pseudo-element does not exist (try adding content:"")
 - X has no effect on ::marker since it is not in then limited set of properties that can be set on this pseudo-element (TO BE COMPLETED)
+- X has no effect on ::first-line since it is not in the limited set of properties that can be set on this pseudo-element (see https://developer.mozilla.org/en-US/docs/Web/CSS/::first-line#Allowable_properties)
 
 # Animation properties
 
