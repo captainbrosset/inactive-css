@@ -1,0 +1,1225 @@
+{
+  "rules": [
+     {
+        "condition": [
+           {
+              "name": "flexContainer",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "flex-direction",
+              "value": null
+           },
+           {
+              "name": "flex-flow",
+              "value": null
+           },
+           {
+              "name": "flex-wrap",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridContainer",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "grid-auto-column",
+              "value": null
+           },
+           {
+              "name": "grid-auto-flow",
+              "value": null
+           },
+           {
+              "name": "grid-auto-rows",
+              "value": null
+           },
+           {
+              "name": "grid-template",
+              "value": null
+           },
+           {
+              "name": "justify-items",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridContainer",
+              "not": true
+           },
+           "and",
+           {
+              "name": "flexContainer",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "align-items",
+              "value": null
+           },
+           {
+              "name": "justify-content",
+              "value": null
+           },
+           {
+              "name": "place-content",
+              "value": null
+           },
+           {
+              "name": "place-items",
+              "value": null
+           },
+           {
+              "name": "place-items",
+              "value": null
+           },
+           {
+              "name": "row-gap",
+              "value": null
+           },
+           {
+              "name": "grid-gap",
+              "value": null
+           },
+           {
+              "name": "grid-row-gap",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridContainer",
+              "not": true
+           },
+           "and",
+           {
+              "name": "flexContainer",
+              "not": true
+           },
+           "and",
+           {
+              "name": "multicolContainer",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "column-gap",
+              "value": null
+           },
+           {
+              "name": "gap",
+              "value": null
+           },
+           {
+              "name": "grid-column-gap",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridContainer",
+              "not": true
+           },
+           "and",
+           {
+              "name": "flexContainer",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "align-content",
+              "value": "*center"
+           },
+           {
+              "name": "align-content",
+              "value": "*start"
+           },
+           {
+              "name": "align-content",
+              "value": "*end"
+           },
+           {
+              "name": "align-content",
+              "value": "normal"
+           },
+           {
+              "name": "align-content",
+              "value": "space*"
+           },
+           {
+              "name": "align-content",
+              "value": "stretch"
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "flexItem",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "flex",
+              "value": null
+           },
+           {
+              "name": "flex-basis",
+              "value": null
+           },
+           {
+              "name": "flex-grow",
+              "value": null
+           },
+           {
+              "name": "flex-shrink",
+              "value": null
+           },
+           {
+              "name": "order",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridItem",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "grid-area",
+              "value": null
+           },
+           {
+              "name": "grid-column",
+              "value": null
+           },
+           {
+              "name": "grid-column-end",
+              "value": null
+           },
+           {
+              "name": "grid-column-start",
+              "value": null
+           },
+           {
+              "name": "grid-row",
+              "value": null
+           },
+           {
+              "name": "grid-row-end",
+              "value": null
+           },
+           {
+              "name": "grid-row-start",
+              "value": null
+           },
+           {
+              "name": "justify-self",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "gridItem",
+              "not": true
+           },
+           "and",
+           {
+              "name": "flexItem",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "align-self",
+              "value": null
+           },
+           {
+              "name": "place-self",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "inlineLevel",
+              "not": true
+           },
+           "and",
+           {
+              "name": "firstLetterPseudo",
+              "not": true
+           },
+           "and",
+           {
+              "name": "firstLinePseudo",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "vertical-align",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "nonReplacedInlineBox",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "max-width",
+              "value": null
+           },
+           {
+              "name": "min-width",
+              "value": null
+           },
+           {
+              "name": "width",
+              "value": null
+           },
+           {
+              "name": "max-height",
+              "value": null
+           },
+           {
+              "name": "min-height",
+              "value": null
+           },
+           {
+              "name": "height",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "floated",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "display",
+              "value": "inline*"
+           },
+           {
+              "name": "display",
+              "value": "table-*"
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "flexItem",
+              "not": false
+           },
+           "or",
+           {
+              "name": "gridItem",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "float",
+              "value": "left"
+           },
+           {
+              "name": "float",
+              "value": "right"
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "absPositioned",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "clip",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "visitedRule",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "all",
+              "value": null
+           },
+           {
+              "name": "color",
+              "value": null
+           },
+           {
+              "name": "background",
+              "value": null
+           },
+           {
+              "name": "background-color",
+              "value": null
+           },
+           {
+              "name": "border",
+              "value": null
+           },
+           {
+              "name": "border-color",
+              "value": null
+           },
+           {
+              "name": "border-bottom-color",
+              "value": null
+           },
+           {
+              "name": "border-left-color",
+              "value": null
+           },
+           {
+              "name": "border-right-color",
+              "value": null
+           },
+           {
+              "name": "border-top-color",
+              "value": null
+           },
+           {
+              "name": "border-block",
+              "value": null
+           },
+           {
+              "name": "border-block-color",
+              "value": null
+           },
+           {
+              "name": "border-block-start-color",
+              "value": null
+           },
+           {
+              "name": "border-block-end-color",
+              "value": null
+           },
+           {
+              "name": "border-inline",
+              "value": null
+           },
+           {
+              "name": "border-inline-color",
+              "value": null
+           },
+           {
+              "name": "border-inline-start-color",
+              "value": null
+           },
+           {
+              "name": "border-inline-end-color",
+              "value": null
+           },
+           {
+              "name": "column-rule",
+              "value": null
+           },
+           {
+              "name": "column-rule-color",
+              "value": null
+           },
+           {
+              "name": "outline",
+              "value": null
+           },
+           {
+              "name": "outline-color",
+              "value": null
+           },
+           {
+              "name": "text-decoration-color",
+              "value": null
+           },
+           {
+              "name": "text-emphasis-color",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "positioned",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "top",
+              "value": null
+           },
+           {
+              "name": "right",
+              "value": null
+           },
+           {
+              "name": "bottom",
+              "value": null
+           },
+           {
+              "name": "left",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "positioned",
+              "not": true
+           },
+           "and",
+           {
+              "name": "gridItem",
+              "not": true
+           },
+           "and",
+           {
+              "name": "flexItem",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "z-index",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "overflowHidden",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "text-overflow",
+              "value": "clip"
+           },
+           {
+              "name": "text-overflow",
+              "value": "ellipsis"
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "svgElement",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "fill",
+              "value": null
+           },
+           {
+              "name": "fill-opacity",
+              "value": null
+           },
+           {
+              "name": "fill-rule",
+              "value": null
+           },
+           {
+              "name": "marker",
+              "value": null
+           },
+           {
+              "name": "marker-start",
+              "value": null
+           },
+           {
+              "name": "marker-mid",
+              "value": null
+           },
+           {
+              "name": "marker-end",
+              "value": null
+           },
+           {
+              "name": "stroke",
+              "value": null
+           },
+           {
+              "name": "stroke-dasharray",
+              "value": null
+           },
+           {
+              "name": "stroke-dashoffset",
+              "value": null
+           },
+           {
+              "name": "stroke-linecap",
+              "value": null
+           },
+           {
+              "name": "stroke-miterlimit",
+              "value": null
+           },
+           {
+              "name": "stroke-opacity",
+              "value": null
+           },
+           {
+              "name": "stroke-width",
+              "value": null
+           },
+           {
+              "name": "text-rendering",
+              "value": null
+           },
+           {
+              "name": "alignment-baseline",
+              "value": null
+           },
+           {
+              "name": "baseline-shift",
+              "value": null
+           },
+           {
+              "name": "dominant-baseline",
+              "value": null
+           },
+           {
+              "name": "kerning",
+              "value": null
+           },
+           {
+              "name": "stop-color",
+              "value": null
+           },
+           {
+              "name": "stop-opacity",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "nonReplacedInlineLevel",
+              "not": false
+           },
+           "or",
+           {
+              "name": "tableTrackAndGroup",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "margin-top",
+              "value": null
+           },
+           {
+              "name": "margin-bottom",
+              "value": null
+           },
+           {
+              "name": "padding-top",
+              "value": null
+           },
+           {
+              "name": "padding-bottom",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "tableTrackAndGroup",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "margin",
+              "value": null
+           },
+           {
+              "name": "margin-left",
+              "value": null
+           },
+           {
+              "name": "margin-right",
+              "value": null
+           },
+           {
+              "name": "padding",
+              "value": null
+           },
+           {
+              "name": "padding-left",
+              "value": null
+           },
+           {
+              "name": "padding-right",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "table",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "border-collapse",
+              "value": null
+           },
+           {
+              "name": "border-spacing",
+              "value": null
+           },
+           {
+              "name": "table-layout",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "tableCaption",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "caption-side",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "tableCell",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "empty-cells",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "animated",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "animation-delay",
+              "value": null
+           },
+           {
+              "name": "animation-direction",
+              "value": null
+           },
+           {
+              "name": "animation-duration",
+              "value": null
+           },
+           {
+              "name": "animation-fill-mode",
+              "value": null
+           },
+           {
+              "name": "animation-iteration-count",
+              "value": null
+           },
+           {
+              "name": "animation-play-state",
+              "value": null
+           },
+           {
+              "name": "animation-timing-function",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "transitioned",
+              "not": true
+           }
+        ],
+        "declarations": [
+           {
+              "name": "transition-delay",
+              "value": null
+           },
+           {
+              "name": "transition-duration",
+              "value": null
+           },
+           {
+              "name": "transition-timing-function",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "overflowVisible",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "resize",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "firstLetterPseudo",
+              "not": false
+           },
+           "or",
+           {
+              "name": "firstLinePseudo",
+              "not": false
+           },
+           "or",
+           {
+              "name": "markerPseudo",
+              "not": false
+           }
+        ],
+        "allButDeclarations": [
+           {
+              "name": "font",
+              "value": null
+           },
+           {
+              "name": "font-family",
+              "value": null
+           },
+           {
+              "name": "font-feature-settings",
+              "value": null
+           },
+           {
+              "name": "font-kerning",
+              "value": null
+           },
+           {
+              "name": "font-language-override",
+              "value": null
+           },
+           {
+              "name": "font-optical-sizing",
+              "value": null
+           },
+           {
+              "name": "font-size",
+              "value": null
+           },
+           {
+              "name": "font-size-adjust",
+              "value": null
+           },
+           {
+              "name": "font-stretch",
+              "value": null
+           },
+           {
+              "name": "font-style",
+              "value": null
+           },
+           {
+              "name": "font-synthesis",
+              "value": null
+           },
+           {
+              "name": "font-variant",
+              "value": null
+           },
+           {
+              "name": "font-variant-alternates",
+              "value": null
+           },
+           {
+              "name": "font-variant-caps",
+              "value": null
+           },
+           {
+              "name": "font-variant-east-asian",
+              "value": null
+           },
+           {
+              "name": "font-variant-ligatures",
+              "value": null
+           },
+           {
+              "name": "font-variant-numeric",
+              "value": null
+           },
+           {
+              "name": "font-variant-position",
+              "value": null
+           },
+           {
+              "name": "font-variation-settings",
+              "value": null
+           },
+           {
+              "name": "line-height",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "firstLetterPseudo",
+              "not": false
+           },
+           "or",
+           {
+              "name": "firstLinePseudo",
+              "not": false
+           }
+        ],
+        "allButDeclarations": [
+           {
+              "name": "background",
+              "value": null
+           },
+           {
+              "name": "background-color",
+              "value": null
+           },
+           {
+              "name": "background-image",
+              "value": null
+           },
+           {
+              "name": "background-clip",
+              "value": null
+           },
+           {
+              "name": "background-origin",
+              "value": null
+           },
+           {
+              "name": "background-position",
+              "value": null
+           },
+           {
+              "name": "background-repeat",
+              "value": null
+           },
+           {
+              "name": "background-size",
+              "value": null
+           },
+           {
+              "name": "background-attachment",
+              "value": null
+           },
+           {
+              "name": "background-blend-mode",
+              "value": null
+           },
+           {
+              "name": "color",
+              "value": null
+           },
+           {
+              "name": "letter-spacing",
+              "value": null
+           },
+           {
+              "name": "text-decoration",
+              "value": null
+           },
+           {
+              "name": "text-decoration-color",
+              "value": null
+           },
+           {
+              "name": "text-decoration-line",
+              "value": null
+           },
+           {
+              "name": "text-decoration-style",
+              "value": null
+           },
+           {
+              "name": "text-shadow",
+              "value": null
+           },
+           {
+              "name": "text-transform",
+              "value": null
+           },
+           {
+              "name": "vertical-align",
+              "value": null
+           },
+           {
+              "name": "word-spacing",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "firstLetterPseudo",
+              "not": false
+           }
+        ],
+        "allButDeclarations": [
+           {
+              "name": "margin",
+              "value": null
+           },
+           {
+              "name": "margin-top",
+              "value": null
+           },
+           {
+              "name": "margin-right",
+              "value": null
+           },
+           {
+              "name": "margin-bottom",
+              "value": null
+           },
+           {
+              "name": "margin-left",
+              "value": null
+           },
+           {
+              "name": "padding",
+              "value": null
+           },
+           {
+              "name": "padding-top",
+              "value": null
+           },
+           {
+              "name": "padding-right",
+              "value": null
+           },
+           {
+              "name": "padding-bottom",
+              "value": null
+           },
+           {
+              "name": "padding-left",
+              "value": null
+           },
+           {
+              "name": "border",
+              "value": null
+           },
+           {
+              "name": "border-style",
+              "value": null
+           },
+           {
+              "name": "border-color",
+              "value": null
+           },
+           {
+              "name": "border-width",
+              "value": null
+           },
+           {
+              "name": "border-radius",
+              "value": null
+           },
+           {
+              "name": "border-image",
+              "value": null
+           },
+           {
+              "name": "box-shadow",
+              "value": null
+           },
+           {
+              "name": "float",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "markerPseudo",
+              "not": false
+           }
+        ],
+        "allButDeclarations": [
+           {
+              "name": "white-space",
+              "value": null
+           },
+           {
+              "name": "color",
+              "value": null
+           },
+           {
+              "name": "text-combine-upright",
+              "value": null
+           },
+           {
+              "name": "unicode-bidi",
+              "value": null
+           },
+           {
+              "name": "direction",
+              "value": null
+           },
+           {
+              "name": "content",
+              "value": null
+           },
+           {
+              "name": "animation",
+              "value": null
+           },
+           {
+              "name": "animation-delay",
+              "value": null
+           },
+           {
+              "name": "animation-direction",
+              "value": null
+           },
+           {
+              "name": "animation-duration",
+              "value": null
+           },
+           {
+              "name": "animation-fill-mode",
+              "value": null
+           },
+           {
+              "name": "animation-iteration-count",
+              "value": null
+           },
+           {
+              "name": "animation-name",
+              "value": null
+           },
+           {
+              "name": "animation-play-state",
+              "value": null
+           },
+           {
+              "name": "animation-timing-function",
+              "value": null
+           },
+           {
+              "name": "transition",
+              "value": null
+           },
+           {
+              "name": "transition-delay",
+              "value": null
+           },
+           {
+              "name": "transition-duration",
+              "value": null
+           },
+           {
+              "name": "transition-property",
+              "value": null
+           },
+           {
+              "name": "transition-timing-function",
+              "value": null
+           }
+        ]
+     },
+     {
+        "condition": [
+           {
+              "name": "beforeOrAfterPseudo",
+              "not": false
+           },
+           "and",
+           {
+              "name": "emptyContent",
+              "not": false
+           }
+        ],
+        "declarations": [
+           {
+              "name": "*",
+              "value": null
+           }
+        ]
+     }
+  ]
+}

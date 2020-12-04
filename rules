@@ -1,0 +1,281 @@
+flex-direction
+flex-flow
+flex-wrap
+  = !flexContainer
+
+grid-auto-column
+grid-auto-flow
+grid-auto-rows
+grid-template
+justify-items
+  = !gridContainer
+
+align-items
+justify-content
+place-content
+place-items
+place-items
+row-gap
+// grid-*-gap are supported legacy shorthands for the corresponding *-gap properties.
+// See https://drafts.csswg.org/css-align-3/#gap-legacy for more information.
+grid-gap
+grid-row-gap
+  = !gridContainer && !flexContainer
+
+column-gap
+gap
+// grid-*-gap are supported legacy shorthands for the corresponding *-gap properties.
+// See https://drafts.csswg.org/css-align-3/#gap-legacy for more information.
+grid-column-gap
+  = !gridContainer && !flexContainer && !multicolContainer
+
+// align-content normally only works on flex and grid containers, except when it
+// has a baseline value, then it works on table cells, and (in the future) on
+// multicol and blocks.
+align-content|*center
+align-content|*start
+align-content|*end
+align-content|normal
+align-content|space*
+align-content|stretch
+  = !gridContainer && !flexContainer
+
+flex
+flex-basis
+flex-grow
+flex-shrink
+order
+  = !flexItem
+
+grid-area
+grid-column
+grid-column-end
+grid-column-start
+grid-row
+grid-row-end
+grid-row-start
+justify-self
+  = !gridItem
+
+align-self
+place-self
+  = !gridItem && !flexItem
+
+vertical-align
+  = !inlineLevel && !firstLetterPseudo && !firstLinePseudo
+
+max-width
+min-width
+width
+max-height
+min-height
+height
+  = nonReplacedInlineBox
+
+display|inline*
+display|table-*
+  = floated
+
+float|left
+float|right
+  = flexItem || gridItem
+
+clip
+  = !absPositioned
+
+all
+color
+background
+background-color
+border
+border-color
+border-bottom-color
+border-left-color
+border-right-color
+border-top-color
+border-block
+border-block-color
+border-block-start-color
+border-block-end-color
+border-inline
+border-inline-color
+border-inline-start-color
+border-inline-end-color
+column-rule
+column-rule-color
+outline
+outline-color
+text-decoration-color
+text-emphasis-color
+  = visitedRule
+
+top
+right
+bottom
+left
+  = !positioned
+
+z-index
+  = !positioned && !gridItem && !flexItem
+
+text-overflow|clip
+text-overflow|ellipsis
+  = !overflowHidden
+
+fill
+fill-opacity
+fill-rule
+marker
+marker-start
+marker-mid
+marker-end
+stroke
+stroke-dasharray
+stroke-dashoffset
+stroke-linecap
+stroke-miterlimit
+stroke-opacity
+stroke-width
+text-rendering
+alignment-baseline
+baseline-shift
+dominant-baseline
+kerning
+stop-color
+stop-opacity
+  = !svgElement
+
+margin-top
+margin-bottom
+padding-top
+padding-bottom
+  = nonReplacedInlineLevel || tableTrackAndGroup
+
+margin
+margin-left
+margin-right
+padding
+padding-left
+padding-right
+  = tableTrackAndGroup
+
+border-collapse
+border-spacing
+table-layout
+  = !table
+
+caption-side
+  = !tableCaption
+
+empty-cells
+  = !tableCell
+
+animation-delay
+animation-direction
+animation-duration
+animation-fill-mode
+animation-iteration-count
+animation-play-state
+animation-timing-function
+  = !animated
+
+transition-delay
+transition-duration
+transition-timing-function
+  = !transitioned
+
+resize
+  = overflowVisible
+
+[all-but]
+font
+font-family
+font-feature-settings
+font-kerning
+font-language-override
+font-optical-sizing
+font-size
+font-size-adjust
+font-stretch
+font-style
+font-synthesis
+font-variant
+font-variant-alternates
+font-variant-caps
+font-variant-east-asian
+font-variant-ligatures
+font-variant-numeric
+font-variant-position
+font-variation-settings
+line-height
+  = firstLetterPseudo || firstLinePseudo || markerPseudo
+
+[all-but]
+background
+background-color
+background-image
+background-clip
+background-origin
+background-position
+background-repeat
+background-size
+background-attachment
+background-blend-mode
+color
+letter-spacing
+text-decoration
+text-decoration-color
+text-decoration-line
+text-decoration-style
+text-shadow
+text-transform
+vertical-align
+word-spacing
+  = firstLetterPseudo || firstLinePseudo
+
+[all-but]
+margin
+margin-top
+margin-right
+margin-bottom
+margin-left
+padding
+padding-top
+padding-right
+padding-bottom
+padding-left
+border
+border-style
+border-color
+border-width
+border-radius
+border-image
+box-shadow
+float
+  = firstLetterPseudo
+
+[all-but]
+white-space
+color
+text-combine-upright
+unicode-bidi
+direction
+content
+animation
+animation-delay
+animation-direction
+animation-duration
+animation-fill-mode
+animation-iteration-count
+animation-name
+animation-play-state
+animation-timing-function
+transition
+transition-delay
+transition-duration
+transition-property
+transition-timing-function
+  = markerPseudo
+
+*
+  = beforeOrAfterPseudo && emptyContent
