@@ -133,9 +133,9 @@ That feature was based on the awesome [research](http://users.eecs.northwestern.
 
 To achieve this, we implemented a list of rules, very much like the one here, but in a different format, as [a JavaScript file](https://searchfox.org/mozilla-central/source/devtools/server/actors/utils/inactive-property-helper.js) specifically done for the DevTools, and not thought out to be reusable.
 
-We also understood, at the time, that it was very dangerous to make this list too complete too eagerly as any false positive would ruin the trust that users would have in the tool. Indeed, this is, after all, just a list of heuristics, not a 100% garanteed checker, so there is room for mistakes, especially given the complexity of how and when CSS applies.\
+We also understood, at the time, that it was dangerous to make this list too complete too eagerly as any false positive would ruin the trust that users would have in the tool. Indeed the feature was, after all, based on a list of heuristics and not a 100% garanteed checker. There was room for mistakes, especially given the complexity of how and when CSS applies.\
 So the list in Firefox is not as complete as it could be and is likely not going to evolve very fast.
 
-I wanted to create a new list, as a easier format for people (and tools) to use and contribute to, and put it on GitHub as a hope that it could benefit from more people contributing to it and making it as complete and correct as it possibly can.
+My goal here is to create a similar list, but in a format that people (and tools) can more easily use, and put it on GitHub with the hope that it could benefit from more people contributing to it and making it as complete and correct as it possibly can.
 
 ♥ I would love to accept your PRs if you can think of ways to improve this.
