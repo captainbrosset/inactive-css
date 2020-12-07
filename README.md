@@ -28,7 +28,7 @@ Trying to do the same thing statically would require to detect if the CSS rule t
 
 What you will find in this repository is a list of rules that can be used by people or programs to know when CSS properties are inactive in certain situations.
 
-📕 __[See the list of rules here](blob/master/rules)__
+📕 __[See the list of rules here](rules)__
 
 The file is written in a custom format. It contains a list of rules, each rule having the following shape:
 
@@ -115,15 +115,15 @@ Each keyword is implemented by a helper function that has the same name and retu
 
 For these helper functions to work, they need access to some data. In particular: the element's computed style, the element's parent's computed style (note that by element's parent we mean the __rendered__ parent, so if a parent is `display:contents`, we expect to walk up to its parent, and so on), the CSS rule object the property is coming from, and the element itself. This data is given to the helpers as function arguments.
 
-📕 __[See the list of helper functions here](blob/master/helpers.js)__
+📕 __[See the list of helper functions here](helpers.js)__
 
 ## The grammar and parsed rules
 
 In this repository, you will also find a PEG.js grammar file that can be used to generate a parser for the list of rules, and a simple AST-like JSON file, being the output of that parser.
 
-📕 __[See the PEG.js grammar file here](blob/master/rules.pegjs)__
+📕 __[See the PEG.js grammar file here](rules.pegjs)__
 
-📕 __[See the rules AST here](blob/master/rules.json)__
+📕 __[See the rules AST here](rules.json)__
 
 # Background
 
