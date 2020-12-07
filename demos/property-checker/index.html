@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+*, input {
+  font-size: 1rem;
+}
+
+body {
+	display: grid;
+	place-items: start center;
+	padding-block-start: 2rem;
+}
+
+.wrapper {
+  width: 80vmin;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+#property {
+	text-align: center;
+	padding: .5rem;
+  border-radius: 3px;
+  border: 2px solid #eee;
+}
+
+#rules {
+	display: grid;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.condition {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+  flex-wrap: wrap;
+	gap: .5rem;
+  padding: 1rem;
+  background: #eee;
+  border-radius: 3px;
+	justify-content: center;
+}
+
+.condition li {
+  display: inline;
+}
+</style>
+<div class="wrapper">
+  <input type="text" id="property">
+  <div id="rules"></div>
+</div>
+<script>
+const inputEl = document.querySelector("#property");
+const rulesEl = document.querySelector("#rules");
+
+let rules;
+let properties;
+
+async function getAllProperties() {
+  if (properties) {
+    return properties;
+  }
+
+  const response = await fetch('https://raw.githubusercontent.com/mdn/data/master/css/properties.json');
+  const data = await response.json();
+  properties = Object.keys(data);
+  return properties;
+}
+
+async function getRules() {
+  if (rules) {
+    return rules;
+  }
+
+  const response = await fetch('https://raw.githubusercontent.com/captainbrosset/inactive-css/master/rules.json');
+  const data = await response.json();
+  rules = data.rules;
+  return rules;
+}
+
+function matches(candidate, string) {
+  const regexp = new RegExp(candidate.replace('*', '.*'));
+  return !!string.match(regexp);
+}
+
+async function findRelevantRules(property) {
+  const allProperties = await getAllProperties();
+  if (!allProperties.includes(property)) {
+    return {property, rules: []};
+  }
+
+  const rules = await getRules();
+
+  const relevant = [];
+  
+  for (const rule of rules) {
+    if (rule.declarations){
+      for (const declaration of rule.declarations) {
+        if (matches(declaration.name, property)) {
+          relevant.push(rule);
+          // As soon as one declaration matches, the rule is relevant
+          break;
+        }
+      }
+    }
+
+    if (rule.allButDeclarations) {
+      let match = true;
+      for (const declaration of rule.allButDeclarations) {
+        if (matches(declaration.name, property)) {
+          match = false;
+          break;
+        }
+      }
+
+      if (match) {
+        // All declarations need to match in an all-but rule.
+        relevant.push(rule);
+      }
+    }
+  }
+  
+  return {property, rules: relevant};
+}
+
+function printOr(conditionEl) {
+  const el = document.createElement("li");
+  el.textContent = "OR";
+  conditionEl.appendChild(el);
+}
+
+function printAnd(conditionEl) {
+  const el = document.createElement("li");
+  el.textContent = "AND";
+  conditionEl.appendChild(el);
+}
+
+function printKeyword({name, not}, conditionEl) {
+  const el = document.createElement("li");
+  el.textContent = `${not ? "not" : ""} ${name}`;
+  conditionEl.appendChild(el);
+}
+
+function printCondition(condition) {
+  const conditionEl =  document.createElement("ul");
+  conditionEl.classList.add("condition");
+
+  for (const part of condition) {
+    if (part === "or") {
+      printOr(conditionEl);
+    } else if (part === "and") {
+      printAnd(conditionEl);
+    } else {
+      printKeyword(part, conditionEl);
+    }
+  }
+
+  rulesEl.appendChild(conditionEl);
+}
+
+inputEl.addEventListener('input', e => {
+  rulesEl.innerHTML = "";
+
+  findRelevantRules(inputEl.value).then(({property, rules}) => {
+    if (property !== inputEl.value) {
+      // a new input event happened while we were searching for rules, bail out.
+      return;
+    }
+
+    rules.forEach(rule => printCondition(rule.condition));
+  });
+});
+</script>
