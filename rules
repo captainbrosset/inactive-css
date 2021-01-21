@@ -62,7 +62,7 @@ place-self
   = !gridItem && !flexItem
 
 vertical-align
-  = !inlineLevel && !firstLetterPseudo && !firstLinePseudo
+  = !inlineLevel && !firstLetterPseudo && !firstLinePseudo && !tableCell
 
 max-width
 min-width
