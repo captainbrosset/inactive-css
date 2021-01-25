@@ -65,11 +65,17 @@ vertical-align
   = !inlineLevel && !firstLetterPseudo && !firstLinePseudo && !tableCell
 
 max-width
-min-width
-width
 max-height
+max-inline-size
+max-block-size
+min-width
 min-height
+min-inline-size
+min-block-size
+width
 height
+inline-size
+block-size
   = nonReplacedInlineBox
 
 display|inline*
