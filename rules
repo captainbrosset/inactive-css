@@ -216,6 +216,15 @@ font-variation-settings
 line-height
   = firstLetterPseudo || firstLinePseudo || markerPseudo
 
+background-position
+background-position-x
+background-position-y
+background-attachment
+background-blend-mode
+background-repeat
+background-size
+  = !backgroundImageDefined
+
 [all-but]
 background
 background-color
