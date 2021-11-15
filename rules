@@ -294,3 +294,7 @@ transition-timing-function
 
 *
   = beforeOrAfterPseudo && emptyContent
+
+// Floated elements, grid and flex items are blockified. So display:block is not useful.
+display|block
+  = flexItem || gridItem || floated
