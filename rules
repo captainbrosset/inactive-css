@@ -3,7 +3,7 @@ flex-flow
 flex-wrap
   = !flexContainer
 
-grid-auto-column
+grid-auto-columns
 grid-auto-flow
 grid-auto-rows
 grid-template
