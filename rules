@@ -76,7 +76,7 @@ width
 height
 inline-size
 block-size
-  = nonReplacedInlineBox
+  = nonReplacedInlineBox || isDisplayContents
 
 display|inline*
 display|table-*
@@ -84,7 +84,7 @@ display|table-*
 
 float|left
 float|right
-  = flexItem || gridItem
+  = flexItem || gridItem || absPositioned
 
 clip
   = !absPositioned
@@ -115,6 +115,8 @@ text-decoration-color
 text-emphasis-color
   = visitedRule
 
+// TODO: add inset* properties
+// https://www.w3.org/TR/css-position-3/#insets
 top
 right
 bottom
@@ -297,4 +299,4 @@ transition-timing-function
 
 // Floated elements, grid and flex items are blockified. So display:block is not useful.
 display|block
-  = flexItem || gridItem || floated
+  = flexItem || gridItem || floated || absPositioned
