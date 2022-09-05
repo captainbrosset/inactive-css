@@ -13,6 +13,12 @@ function flexContainer({style}) {
   return style.display.endsWith("flex");
 }
 
+// The element itself does not generate any boxes, but its children and 
+// pseudo-elements still generate boxes and text runs as normal. 
+function isDisplayContents({style}) {
+  return style.display === "contents";
+}
+
 function multicolContainer({style}) {
   return style.columnWidth === "auto" || style.columnCount === "auto";
 }
