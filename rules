@@ -115,12 +115,25 @@ text-decoration-color
 text-emphasis-color
   = visitedRule
 
-// TODO: add inset* properties
-// https://www.w3.org/TR/css-position-3/#insets
 top
 right
 bottom
 left
+
+// https://www.w3.org/TR/css-position-3/#insets
+inset-block-start
+inset-inline-start
+inset-block-end
+inset-inline-end
+
+// shorthand properties for setting `top` + `left` + `right` + `bottom`
+inset
+
+// shorthand properties for setting `inset-block-start` + `inset-block-end`
+inset-block
+
+// shorthand properties for setting `inset-inline-start` + `inset-inline-end`
+inset-inline
   = !positioned
 
 z-index
